@@ -2,8 +2,7 @@
 
 /* configuraciones generales */
 :root{
-    --verde: #0c443a;
-    --limon: #25d1b2;
+    
     --azul: #1d2cf4;
     --negro: #15172e;
     --blanco: #cdd0f0;
@@ -362,6 +361,138 @@ header label{
     font-size: 1.5rem;
     padding: 1rem;
 }
+
+/*galeria*/
+
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 8%;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img{
+    width: 90%;
+    max-width: 500px;
+}
+
+.full-img span{
+    position: absolute;
+    top: 8%;
+    right: 1%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*footer*/
+
+.footer{
+    padding-top: 1rem;
+    background: url(../img/906.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .caja-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .caja-contenedor .caja{
+    flex: 1 1 25rem;
+    margin: 2rem;
+}
+
+.footer .caja-contenedor .caja h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: wheat;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-align: center;
+}
+
+.footer .caja-contenedor .caja p{
+    font-size: 1.5rem;
+    padding: 5rem;
+    color: whitesmoke;
+}
+
+.footer .caja-contenedor .caja a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 2.3rem;
+    color: wheat;
+    text-align: center;
+    
+}
+
+.footer .caja-contenedor .caja a:hover{
+    text-decoration: underline;
+    color: var(--negro);
+}
+
+.footer .caja-contenedor .caja .info{
+    display: flex;
+    align-items: center;
+}
+
+.footer .caja-contenedor .caja .info i{
+    margin: .5rem 0;
+    margin-right: 2rem;
+    border-radius: 50%;
+    background: whitesmoke;
+    color: var(--azul);
+    font-size: 2.9rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.footer .creditos{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: wheat;
+    border-top: .1rem solid wheat;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+.footer .creditos span{
+    color: var(--negro);
+}
+
+
 /*menu responsivo escritorio , table, celular*/
 @media(max-width:1200px){
     html{

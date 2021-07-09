@@ -20,7 +20,7 @@
                 <a href="#detalles">detalles</a>
                 <a href="#acerca_de">acerca de</a>
                 <a href="#opiniones">opiniones</a>
-                <a href="#precios">precios</a>
+                <a href="#postres">postres</a>
                 <a href="#contactos">contactos</a>
             </nav>
     </header>
@@ -137,7 +137,7 @@
             <i class="fas fa-adjust"></i>
             <div class="user">
              <img src="./img/user_1.png" alt="">
-              <h3>padre</h3>
+              <h3>Juan</h3>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -158,7 +158,7 @@
             <i class="fas fa-adjust"></i>
             <div class="user">
              <img src="./img/user_2.png" alt="">
-              <h3>padre</h3>
+              <h3>Camila</h3>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -179,7 +179,7 @@
             <i class="fas fa-adjust"></i>
             <div class="user">
              <img src="./img/user_3.png" alt="">
-              <h3>padre</h3>
+              <h3>Pedro</h3>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -198,5 +198,78 @@
 
     </div>
 </section>
+
+
+<h1 class="heading" id="postres">Postres de oreo</h1>
+<div class="full-img" id="fullimgBox">
+    <img src="./img/img1.jpg" alt="" id="fullimg">
+    <span onclick="closeFullimg()">X</span>
+
+</div>
+
+<div class="img-gallery">
+    <img src="./img/img1.jpg" alt="" onclick="openFullimg(this.src)">
+    <img src="./img/img2.jpg" alt="" onclick="openFullimg(this.src)">
+    <img src="./img/img3.jpg" alt="" onclick="openFullimg(this.src)">
+    <img src="./img/img4.jpg" alt="" onclick="openFullimg(this.src)">
+    <img src="./img/img5.jpg" alt="" onclick="openFullimg(this.src)">
+    <img src="./img/img6.jpg" alt="" onclick="openFullimg(this.src)">
+    <img src="./img/img7.jpg" alt="" onclick="openFullimg(this.src)">
+    <img src="./img/img8.jpg" alt="" onclick="openFullimg(this.src)">
+    <img src="./img/img9.jpg" alt="" onclick="openFullimg(this.src)">
+
+</div>
+
+<div class="footer" id="contactos">
+    <div class="caja-contenedor">
+        <div class="caja">
+            <h3>Sobre nosotros</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae nobis nemo ipsa dolores odio ex, doloribus
+                impedit, neque cum, harum maxime dicta nihil est
+                nesciunt saepe hic eius cupiditate illum.</p>
+        </div>
+        <div class="caja">
+            <h3>Siguenos en las redes</h3>
+            <a href="#">Facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+        </div>
+        <div class="caja">
+            <h3>Nustros Contactos</h3>
+
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p>+54 155 879-809 <br>+54 156 098-211</p>
+            </div>
+
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p>ejemplo@gmail.com <br>ejemplo2@gmail.com</p>
+            </div>
+
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>san juan, argentina<br>8005</p>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="creditos"> &copy, copyright  2021 <span>ML</span></h1>
+</div>
+
+<script>
+    var fullimgBox = document.getElementById("fullimgBox");
+    var fullimg = document.getElementById("fullimg");
+
+    function openFullimg(pic){
+        fullimgBox.style.display = "flex";
+        fullimg.src = pic;
+    }
+
+    function closeFullimg(){
+        fullimgBox.style.display = "none";
+    }
+</script>
 </body>
 </html>
