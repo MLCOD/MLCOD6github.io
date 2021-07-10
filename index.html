@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina web oreo</title>
+    <script src="./js/scrollreveal.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <link rel="stylesheet" href="css/estilos.css">
@@ -96,11 +97,11 @@
     </section>
 
 
-<section class="acerca_de" id="acerca_de">
+<section class="acerca_de " id="acerca_de">
 <h1 class="heading"> Oreo Clasicas</h1>
 <div class="columna">
     <div class="image">
-        <img src="img/010.png" alt="">
+        <img src="img/010.png" class="scroll" alt="">
     </div>
 
     <div class="content">
@@ -258,18 +259,6 @@
     <h1 class="creditos"> &copy, copyright  2021 <span>ML</span></h1>
 </div>
 
-<script>
-    var fullimgBox = document.getElementById("fullimgBox");
-    var fullimg = document.getElementById("fullimg");
-
-    function openFullimg(pic){
-        fullimgBox.style.display = "flex";
-        fullimg.src = pic;
-    }
-
-    function closeFullimg(){
-        fullimgBox.style.display = "none";
-    }
-</script>
+<script src="./js/main.js"></script>
 </body>
 </html>
